@@ -80,6 +80,7 @@ int main(int argc, char const *argv[])
 
 	printf(" Before swapping \n");
 	printList(head);
+	
 	swap(&head,1,5);
 
 	printf("\n After swapping \n");
