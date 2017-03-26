@@ -23,6 +23,7 @@ void printList(struct node *node)
 	}
 }
 
+// function to reverse the given linked list
 void recursiveReverse(struct node** head_ref)
 {
 	if(head_ref == NULL)
