@@ -1,6 +1,11 @@
 #include "stdio.h"
 #include "stdlib.h"
 
+/*
+* program to check if a path from root to leaf nodes
+* with sum equal to a given sum exists in a tree or not
+*/
+
 struct node
 {
 	int data;
@@ -16,6 +21,7 @@ struct node* newNode(int data)
 	return temp;
 }
 
+// utility function to check if path from root to leaf node with a given sum exists or not
 bool check(struct node* node,int sum)
 {
 	if(node==NULL)
