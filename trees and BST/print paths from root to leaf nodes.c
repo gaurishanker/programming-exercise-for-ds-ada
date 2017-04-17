@@ -1,3 +1,5 @@
+/* Program to print different paths from root to leaf nodes */
+
 #include "stdio.h"
 #include "stdlib.h"
 
@@ -18,9 +20,10 @@ struct node* newNode(int data)
 	return temp;
 }
 
+
 void printPath(struct node* node)
 {
-	int path[100];
+	int path[100];				// path array stores paths from root to node 
 	if(node == NULL)
 		return;
 	printPathUtil(node,path,0);
