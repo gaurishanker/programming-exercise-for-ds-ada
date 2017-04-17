@@ -20,6 +20,8 @@ int max(int a,int b)
 {
 	return a>b?a:b;
 }
+
+//function to calculate height of tree
 int height(struct node* node)
 {
 	if(node==NULL)
