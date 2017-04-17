@@ -1,3 +1,5 @@
+/* program to find mirror of a tree */
+
 #include "stdio.h"
 #include "stdlib.h"
 
