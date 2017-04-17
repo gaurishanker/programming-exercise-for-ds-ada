@@ -18,7 +18,9 @@ struct node* NewNode(int data)
 
 /*
 Traversal for this tree
+
 		1
+	
 	2		3
 
   4    5 6		7
