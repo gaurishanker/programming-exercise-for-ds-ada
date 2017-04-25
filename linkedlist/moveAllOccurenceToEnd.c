@@ -1,3 +1,6 @@
+//Given a linked list and a key in it, the task is to move all occurrences 
+//of given key to end of linked list, keeping order of all other elements same.
+
 #include "stdio.h"
 #include "stdlib.h"
 
