@@ -24,7 +24,10 @@ struct node* newNode(int d)
 int Diameter(struct node* node,int* height)
 {
 	if(node==NULL)
+	{
+		*height=0;
 		return 0;
+	}
 	int lh=0,rh=0;
 	int ldia = Diameter(node->left,&lh);
 	int rdia = Diameter(node->right,&rh);
@@ -42,6 +45,6 @@ int main(int argc, char const *argv[])
 	root->left->right->left = newNode(6);
 	root->right->right = newNode(7); 
 	int height=0;
-	printf("Diameter of given tree is %d ",Diameter(root,&height));
+	printf("Diameter of given tree is %d",Diameter(root,&height));
 	return 0;
 }
